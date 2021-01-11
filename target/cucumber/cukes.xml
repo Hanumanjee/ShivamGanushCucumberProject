@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="205.921">
+<testcase classname="Search and place order for Vegetables" name="Search for items and move to checkout page" time="41.156">
+<system-out><![CDATA[Given validate the browser..................................................passed
+When Browser is triggered...................................................passed
+Then check if browser is started............................................passed
+Given User is in GreenKart Landing page.....................................passed
+When User searched for  "Brinjal" vegetable.................................passed
+And Added items to cart.....................................................passed
+And User proceeds to Checkout page for purchase.............................passed
+Then Verify selected "Brinjal"items are displayed in Checkout page..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and place order for Vegetables" name="Search for items and validate results" time="108.905">
+<system-out><![CDATA[Given validate the browser..................................................passed
+When Browser is triggered...................................................passed
+Then check if browser is started............................................passed
+Given User is in GreenKart Landing page.....................................passed
+When User searched for  Cucumber vegetables.................................passed
+Then Cucumber results is displayed..........................................passed
+And close the browser.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and place order for Vegetables" name="Search for items and validate results 2" time="22.437">
+<system-out><![CDATA[Given validate the browser..................................................passed
+When Browser is triggered...................................................passed
+Then check if browser is started............................................passed
+Given User is in GreenKart Landing page.....................................passed
+When User searched for  Tomato vegetables...................................passed
+Then Tomato results is displayed............................................passed
+And close the browser.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and place order for Vegetables" name="Search for items and validate results 3" time="32.943">
+<system-out><![CDATA[Given validate the browser..................................................passed
+When Browser is triggered...................................................passed
+Then check if browser is started............................................passed
+Given User is in GreenKart Landing page.....................................passed
+When User searched for  Brinjal vegetables..................................passed
+Then Brinjal results is displayed...........................................passed
+And close the browser.......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

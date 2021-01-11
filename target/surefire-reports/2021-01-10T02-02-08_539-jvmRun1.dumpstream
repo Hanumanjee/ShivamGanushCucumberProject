@@ -1,0 +1,60 @@
+# Created at 2021-01-10T02:05:27.207
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2021-01-10T02:05:30.424
+Unexpected IOException with stream:   Given User is in GreenKart Landing page               # stepDefinitions.stepDefinitionRahul.user_is_in_greenkart_landing_page()
+
+
+# Created at 2021-01-10T02:05:35.381
+Unexpected IOException with stream:   When User searched for  Brinjal vegetables            # stepDefinitions.stepDefinitionRahul.user_searched_for_vegetable(java.lang.String)
+
+
+# Created at 2021-01-10T02:05:35.572
+Unexpected IOException with stream: Brinjal - 1 Kg
+
+
+# Created at 2021-01-10T02:05:35.631
+Unexpected IOException with stream:   Then Brinjal results is displayed                     # stepDefinitions.stepDefinitionRahul.results_is_displayed(java.lang.String)
+
+
+# Created at 2021-01-10T02:05:39.890
+Unexpected IOException with stream:   And close the browser                                 # stepDefinitions.stepDefinitionRahul.close_the_browser()
+
+
+# Created at 2021-01-10T02:05:44.377
+Unexpected IOException with stream: ?????????????????????????????????????????????????????????????????????????????????????
+? Share your Cucumber Report with your team at https://reports.cucumber.io          ?
+? Activate publishing with one of the following:                                    ?
+?                                                                                   ?
+? src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    ?
+? src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    ?
+? Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    ?
+? JUnit:                                           @CucumberOptions(publish = true) ?
+?                                                                                   ?
+? More information at https://reports.cucumber.io/docs/cucumber-jvm                 ?
+?                                                                                   ?
+? Disable this message with one of the following:                                   ?
+?                                                                                   ?
+? src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      ?
+? src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      ?
+?????????????????????????????????????????????????????????????????????????????????????
+
+
+# Created at 2021-01-10T02:05:44.669
+Unexpected IOException: 5,1,GaneshCucumber.AppTest,shouldAnswerWithTrue on shouldAnswerWithTrue(GaneshCucumber.AppTest)(GaneshCucumber.AppTest),GaneshCucumber.AppTest,null,null
+
+
+# Created at 2021-01-10T02:05:44.698
+Unexpected IOException: 6,1,GaneshCucumber.AppTest,shouldAnswerWithTrue on shouldAnswerWithTrue(GaneshCucumber.AppTest)(GaneshCucumber.AppTest),null,null,null
+
+
+# Created at 2021-01-10T02:05:45.019
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGDirectoryTestSuite,TestSuite,null,null,null
+
+

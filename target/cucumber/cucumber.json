@@ -1,0 +1,505 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6838000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "validate the browser",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.validate_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is triggered",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.browser_is_triggered()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "check if browser is started",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.check_if_browser_is_started()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-10T10:02:14.411Z",
+        "line": 15,
+        "name": "Search for items and move to checkout page",
+        "description": "",
+        "id": "search-and-place-order-for-vegetables;search-for-items-and-move-to-checkout-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 27649000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User is in GreenKart Landing page",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.user_is_in_greenkart_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4974000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User searched for  \"Brinjal\" vegetable",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brinjal",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinitions.stepDefinitionRahul.user_searched_for_something_vegetable(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 260000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Added items to cart",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.added_items_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1241000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User proceeds to Checkout page for purchase",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.user_proceeds_to_checkout_page_for_purchase()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Verify selected \"Brinjal\"items are displayed in Checkout page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brinjal",
+                  "offset": 17
+                }
+              ],
+              "location": "stepDefinitions.stepDefinitionRahul.verify_selected_somethingitems_are_displayed_in_checkout_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9226000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "validate the browser",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.validate_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is triggered",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.browser_is_triggered()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "check if browser is started",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.check_if_browser_is_started()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-10T10:02:55.580Z",
+        "line": 31,
+        "name": "Search for items and validate results",
+        "description": "",
+        "id": "search-and-place-order-for-vegetables;search-for-items-and-validate-results;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 77807000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User is in GreenKart Landing page",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.user_is_in_greenkart_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4773000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User searched for  Cucumber vegetables",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinitions.stepDefinitionRahul.user_searched_for_vegetable(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 205000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Cucumber results is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefinitions.stepDefinitionRahul.results_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16883000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "close the browser",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7478000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "validate the browser",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.validate_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is triggered",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.browser_is_triggered()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "check if browser is started",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.check_if_browser_is_started()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-10T10:04:44.509Z",
+        "line": 32,
+        "name": "Search for items and validate results",
+        "description": "",
+        "id": "search-and-place-order-for-vegetables;search-for-items-and-validate-results;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8260000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User is in GreenKart Landing page",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.user_is_in_greenkart_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5364000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User searched for  Tomato vegetables",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tomato",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinitions.stepDefinitionRahul.user_searched_for_vegetable(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 188000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Tomato results is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tomato",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefinitions.stepDefinitionRahul.results_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1112000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "close the browser",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4404000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "validate the browser",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.validate_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is triggered",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.browser_is_triggered()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "check if browser is started",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.check_if_browser_is_started()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-10T10:05:06.955Z",
+        "line": 33,
+        "name": "Search for items and validate results",
+        "description": "",
+        "id": "search-and-place-order-for-vegetables;search-for-items-and-validate-results;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 19055000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User is in GreenKart Landing page",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.user_is_in_greenkart_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4952000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User searched for  Brinjal vegetables",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brinjal",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinitions.stepDefinitionRahul.user_searched_for_vegetable(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 248000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Brinjal results is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brinjal",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefinitions.stepDefinitionRahul.results_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4255000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "close the browser",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionRahul.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Search and place order for Vegetables",
+    "description": "",
+    "id": "search-and-place-order-for-vegetables",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/search.feature",
+    "tags": []
+  }
+]

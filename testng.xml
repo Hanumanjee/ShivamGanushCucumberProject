@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="AutomationSelenium.Listeners"/>
+    </listeners>
+
+<!--    <test name="Validating User login">-->
+<!--        <classes>-->
+<!--            <class name="AutomationSelenium.HomePage"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Validating title in the Page">-->
+<!--        <classes>-->
+<!--            <class name="AutomationSelenium.ValidateTitle"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    &lt;!&ndash;    <test name="App Testing">&ndash;&gt;-->
+<!--    &lt;!&ndash;        <classes>&ndash;&gt;-->
+<!--    &lt;!&ndash;            <class name="AutomationSelenium.AppTest"/>&ndash;&gt;-->
+<!--    &lt;!&ndash;        </classes>&ndash;&gt;-->
+<!--    &lt;!&ndash;    </test>&ndash;&gt;-->
+<!--    <test name="Validating navigation Bar">-->
+<!--        <classes>-->
+<!--            <class name="AutomationSelenium.ValidateNavigationBar"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <!-- Test -->
+</suite> <!-- Suite -->
