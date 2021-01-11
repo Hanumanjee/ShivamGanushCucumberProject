@@ -32,4 +32,14 @@ Feature: Search and place order for Vegetables
       | Tomato        |
       | Brinjal       |
 
-
+@GitTest
+  Scenario Validate successfully purchase message
+    Given User is in GreenKart Landing page
+    When User searched for  "Apple" vegetable
+    And Added items to cart
+    And User proceeds to Checkout page for purchase
+    And User click on PlaceOrder button
+    And User selected country "India" from dropdown list
+    And User checked Agree to the Terms & Conditions
+    And User click on Proceed button
+    Then Validate the message
