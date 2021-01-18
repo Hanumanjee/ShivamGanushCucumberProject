@@ -12,6 +12,7 @@ public class Hooks extends Base {
         System.out.println("Before Mobile  hook");
     }
 //testing pull request
+    //this all lines for merge to git
     @After("@MobileTest")
     public void Aftervaldiation()
     {
