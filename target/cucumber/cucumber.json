@@ -11,126 +11,246 @@
         "steps": [
           {
             "result": {
-              "duration": 6838000000,
+              "duration": 3536000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "validate the browser",
+            "name": "Initialize browser",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.validate_the_browser()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.initialize_browser()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 4072000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "Browser is triggered",
+            "name": "User navigate to Greenkart Homepage",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.browser_is_triggered()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_navigate_to_greenkart_homepage()"
             },
             "keyword": "When "
           },
           {
             "result": {
+              "duration": 17000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "check if browser is started",
+            "name": "Verify user landed in Homepage",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.check_if_browser_is_started()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.verify_user_landed_in_homepage()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-01-10T10:02:14.411Z",
-        "line": 15,
-        "name": "Search for items and move to checkout page",
+        "start_timestamp": "2021-01-18T08:44:28.396Z",
+        "line": 10,
+        "name": "Add item to cart and verify if product is added to cart page",
         "description": "",
-        "id": "search-and-place-order-for-vegetables;search-for-items-and-move-to-checkout-page",
+        "id": "greenkart-add-items-to-cart;add-item-to-cart-and-verify-if-product-is-added-to-cart-page",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 27649000000,
               "status": "passed"
             },
-            "line": 16,
+            "line": 11,
             "name": "User is in GreenKart Landing page",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.user_is_in_greenkart_landing_page()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_is_in_greenkart_landing_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4974000000,
+              "duration": 618000000,
               "status": "passed"
             },
-            "line": 17,
-            "name": "User searched for  \"Brinjal\" vegetable",
+            "line": 12,
+            "name": "User clicks on ADDTOCART button",
             "match": {
-              "arguments": [
-                {
-                  "val": "Brinjal",
-                  "offset": 20
-                }
-              ],
-              "location": "stepDefinitions.stepDefinitionRahul.user_searched_for_something_vegetable(java.lang.String)"
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_clicks_on_addtocart_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 260000000,
+              "duration": 168000000,
               "status": "passed"
             },
-            "line": 18,
-            "name": "Added items to cart",
+            "line": 13,
+            "name": "User clicks on Cart icon",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.added_items_to_cart()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_clicks_on_cart_icon()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1241000000,
+              "duration": 140000000,
               "status": "passed"
             },
-            "line": 19,
-            "name": "User proceeds to Checkout page for purchase",
+            "line": 14,
+            "name": "Verify item is added to cart",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.user_proceeds_to_checkout_page_for_purchase()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.verify_item_is_added_to_cart()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 119000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Browser is closed",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.browser_is_closed()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Testcase1"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2153000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Initialize browser",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.initialize_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2467000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigate to Greenkart Homepage",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_navigate_to_greenkart_homepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify user landed in Homepage",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.verify_user_landed_in_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-18T08:44:37.234Z",
+        "line": 19,
+        "name": "Refresh the page and verify if items are still present in the cart",
+        "description": "",
+        "id": "greenkart-add-items-to-cart;refresh-the-page-and-verify-if-items-are-still-present-in-the-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
               "status": "passed"
             },
             "line": 20,
-            "name": "Verify selected \"Brinjal\"items are displayed in Checkout page",
+            "name": "User is in GreenKart Landing page",
             "match": {
-              "arguments": [
-                {
-                  "val": "Brinjal",
-                  "offset": 17
-                }
-              ],
-              "location": "stepDefinitions.stepDefinitionRahul.verify_selected_somethingitems_are_displayed_in_checkout_page(java.lang.String)"
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_is_in_greenkart_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 771000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User clicks on ADDTOCART button",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_clicks_on_addtocart_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 134000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User clicks on Cart icon",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_clicks_on_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4895000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User refresh the browser",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_refresh_the_browser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"root\"]/div/header/div/div[3]/div[2]/div[1]/div[1]/ul/li/div[1]/p[1]\"}\n  (Session info: chrome\u003d87.0.4280.141)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027HANUMANJEESHIVAMs-MacBook-Pro.local\u0027, ip: \u00272601:642:4180:8870:0:0:0:137%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.12.6\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/fn/fmpftrr97r7...}, goog:chromeOptions: {debuggerAddress: localhost:52629}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 498592c060061a230656f0bf227bba71\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"root\"]/div/header/div/div[3]/div[2]/div[1]/div[1]/ul/li/div[1]/p[1]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat stepDefinitions.stepDefinitionGreenkart.verify_items_are_still_present_in_cart(stepDefinitionGreenkart.java:73)\n\tat ✽.Verify items are still present in cart(file:///Users/hanumanjeeshivam/ideaProjects/ShivamGanushCucumberProject/src/test/java/features/greenkart.feature:24)\n",
+              "duration": 10081000000,
+              "status": "failed"
+            },
+            "line": 24,
+            "name": "Verify items are still present in cart",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.verify_items_are_still_present_in_cart()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "Browser is closed",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.browser_is_closed()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@RegressionTest"
+            "name": "@Testcase2"
           }
         ]
       },
@@ -143,114 +263,156 @@
         "steps": [
           {
             "result": {
-              "duration": 9226000000,
+              "duration": 1776000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "validate the browser",
+            "name": "Initialize browser",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.validate_the_browser()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.initialize_browser()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 2822000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "Browser is triggered",
+            "name": "User navigate to Greenkart Homepage",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.browser_is_triggered()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_navigate_to_greenkart_homepage()"
             },
             "keyword": "When "
           },
           {
             "result": {
+              "duration": 11000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "check if browser is started",
+            "name": "Verify user landed in Homepage",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.check_if_browser_is_started()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.verify_user_landed_in_homepage()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-01-10T10:02:55.580Z",
-        "line": 31,
-        "name": "Search for items and validate results",
+        "start_timestamp": "2021-01-18T08:44:57.834Z",
+        "line": 29,
+        "name": "Increase the count of item and verify it it is showing up in cart",
         "description": "",
-        "id": "search-and-place-order-for-vegetables;search-for-items-and-validate-results;;2",
+        "id": "greenkart-add-items-to-cart;increase-the-count-of-item-and-verify-it-it-is-showing-up-in-cart",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 77807000000,
               "status": "passed"
             },
-            "line": 25,
+            "line": 30,
             "name": "User is in GreenKart Landing page",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.user_is_in_greenkart_landing_page()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_is_in_greenkart_landing_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4773000000,
+              "duration": 2695000000,
               "status": "passed"
             },
-            "line": 26,
-            "name": "User searched for  Cucumber vegetables",
+            "line": 31,
+            "name": "User searched for  \"Cucumber\" vegetable",
             "match": {
               "arguments": [
                 {
                   "val": "Cucumber",
-                  "offset": 19
+                  "offset": 20
                 }
               ],
-              "location": "stepDefinitions.stepDefinitionRahul.user_searched_for_vegetable(java.lang.String)"
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_searched_for_something_vegetable(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 205000000,
+              "duration": 136000000,
               "status": "passed"
             },
-            "line": 27,
-            "name": "Cucumber results is displayed",
+            "line": 32,
+            "name": "User clicks on plus button for 4 times",
             "match": {
-              "arguments": [
-                {
-                  "val": "Cucumber",
-                  "offset": 0
-                }
-              ],
-              "location": "stepDefinitions.stepDefinitionRahul.results_is_displayed(java.lang.String)"
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_clicks_on_plus_button_for_4_times()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User clicks on ADDTOCART button",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_clicks_on_addtocart_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User clicks on Cart icon",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_clicks_on_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Verify items are still present in cart",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.verify_items_are_still_present_in_cart()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 16883000000,
+              "duration": 28000000,
               "status": "passed"
             },
-            "line": 28,
-            "name": "close the browser",
+            "line": 36,
+            "name": "Verify correct numbers of items are in cart",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.close_the_browser()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.verify_correct_numbers_of_items_are_in_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 111000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Browser is closed",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.browser_is_closed()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@RegressionTest"
+            "name": "@Testcase3"
           }
         ]
       },
@@ -263,114 +425,102 @@
         "steps": [
           {
             "result": {
-              "duration": 7478000000,
+              "duration": 2067000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "validate the browser",
+            "name": "Initialize browser",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.validate_the_browser()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.initialize_browser()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 2919000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "Browser is triggered",
+            "name": "User navigate to Greenkart Homepage",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.browser_is_triggered()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_navigate_to_greenkart_homepage()"
             },
             "keyword": "When "
           },
           {
             "result": {
+              "duration": 7000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "check if browser is started",
+            "name": "Verify user landed in Homepage",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.check_if_browser_is_started()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.verify_user_landed_in_homepage()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-01-10T10:04:44.509Z",
-        "line": 32,
-        "name": "Search for items and validate results",
+        "start_timestamp": "2021-01-18T08:45:05.621Z",
+        "line": 41,
+        "name": "Verify text ADDED pops up when you add item to cart",
         "description": "",
-        "id": "search-and-place-order-for-vegetables;search-for-items-and-validate-results;;3",
+        "id": "greenkart-add-items-to-cart;verify-text-added-pops-up-when-you-add-item-to-cart",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 8260000000,
               "status": "passed"
             },
-            "line": 25,
+            "line": 42,
             "name": "User is in GreenKart Landing page",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.user_is_in_greenkart_landing_page()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_is_in_greenkart_landing_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 5364000000,
+              "duration": 562000000,
               "status": "passed"
             },
-            "line": 26,
-            "name": "User searched for  Tomato vegetables",
+            "line": 43,
+            "name": "User clicks on ADDTOCART button",
             "match": {
-              "arguments": [
-                {
-                  "val": "Tomato",
-                  "offset": 19
-                }
-              ],
-              "location": "stepDefinitions.stepDefinitionRahul.user_searched_for_vegetable(java.lang.String)"
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_clicks_on_addtocart_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 188000000,
+              "duration": 114000000,
               "status": "passed"
             },
-            "line": 27,
-            "name": "Tomato results is displayed",
+            "line": 44,
+            "name": "Verify ADDED text is popped up",
             "match": {
-              "arguments": [
-                {
-                  "val": "Tomato",
-                  "offset": 0
-                }
-              ],
-              "location": "stepDefinitions.stepDefinitionRahul.results_is_displayed(java.lang.String)"
+              "location": "stepDefinitions.stepDefinitionGreenkart.verify_added_text_is_popped_up()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1112000000,
+              "duration": 55000000,
               "status": "passed"
             },
-            "line": 28,
-            "name": "close the browser",
+            "line": 45,
+            "name": "Browser is closed",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.close_the_browser()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.browser_is_closed()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@RegressionTest"
+            "name": "@Testcase4"
           }
         ]
       },
@@ -383,123 +533,501 @@
         "steps": [
           {
             "result": {
-              "duration": 4404000000,
+              "duration": 2047000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "validate the browser",
+            "name": "Initialize browser",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.validate_the_browser()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.initialize_browser()"
             },
             "keyword": "Given "
           },
           {
             "result": {
+              "duration": 2571000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "Browser is triggered",
+            "name": "User navigate to Greenkart Homepage",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.browser_is_triggered()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_navigate_to_greenkart_homepage()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 9000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "check if browser is started",
+            "name": "Verify user landed in Homepage",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.check_if_browser_is_started()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.verify_user_landed_in_homepage()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-01-10T10:05:06.955Z",
-        "line": 33,
-        "name": "Search for items and validate results",
+        "start_timestamp": "2021-01-18T08:45:11.356Z",
+        "line": 50,
+        "name": "Verify sum of products matches with amount displayed in cart",
         "description": "",
-        "id": "search-and-place-order-for-vegetables;search-for-items-and-validate-results;;4",
+        "id": "greenkart-add-items-to-cart;verify-sum-of-products-matches-with-amount-displayed-in-cart",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 19055000000,
               "status": "passed"
             },
-            "line": 25,
+            "line": 51,
             "name": "User is in GreenKart Landing page",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.user_is_in_greenkart_landing_page()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_is_in_greenkart_landing_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4952000000,
+              "duration": 2648000000,
               "status": "passed"
             },
-            "line": 26,
-            "name": "User searched for  Brinjal vegetables",
+            "line": 52,
+            "name": "User searched for  \"Cauliflower\" vegetable",
             "match": {
               "arguments": [
                 {
-                  "val": "Brinjal",
-                  "offset": 19
+                  "val": "Cauliflower",
+                  "offset": 20
                 }
               ],
-              "location": "stepDefinitions.stepDefinitionRahul.user_searched_for_vegetable(java.lang.String)"
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_searched_for_something_vegetable(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 248000000,
+              "duration": 134000000,
               "status": "passed"
             },
-            "line": 27,
-            "name": "Brinjal results is displayed",
+            "line": 53,
+            "name": "User clicks on plus button for 4 times",
             "match": {
-              "arguments": [
-                {
-                  "val": "Brinjal",
-                  "offset": 0
-                }
-              ],
-              "location": "stepDefinitions.stepDefinitionRahul.results_is_displayed(java.lang.String)"
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_clicks_on_plus_button_for_4_times()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "User clicks on ADDTOCART button",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_clicks_on_addtocart_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "User clicks on Cart icon",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_clicks_on_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "Verify sum of produts matches with amount displayed in cart",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.verify_sum_of_produts_matches_with_amount_displayed_in_cart()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 4255000000,
+              "duration": 159000000,
               "status": "passed"
             },
-            "line": 28,
-            "name": "close the browser",
+            "line": 57,
+            "name": "Browser is closed",
             "match": {
-              "location": "stepDefinitions.stepDefinitionRahul.close_the_browser()"
+              "location": "stepDefinitions.stepDefinitionGreenkart.browser_is_closed()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@RegressionTest"
+            "name": "@Testcase5"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2225000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Initialize browser",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.initialize_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3161000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigate to Greenkart Homepage",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_navigate_to_greenkart_homepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify user landed in Homepage",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.verify_user_landed_in_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-18T08:45:19.155Z",
+        "line": 61,
+        "name": "Verify the prices shown up for products in page",
+        "description": "",
+        "id": "greenkart-add-items-to-cart;verify-the-prices-shown-up-for-products-in-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "User is in GreenKart Landing page",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_is_in_greenkart_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2540000000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "User searched for  \"Cauliflower\" vegetable",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cauliflower",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_searched_for_something_vegetable(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 90000000,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "User clicks on ADDTOCART button",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_clicks_on_addtocart_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2145000000,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "User searched for  \"Tomato\" vegetable",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tomato",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_searched_for_something_vegetable(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "User clicks on ADDTOCART button",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_clicks_on_addtocart_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2118000000,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "User searched for  \"Beans\" vegetable",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Beans",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_searched_for_something_vegetable(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62000000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "User clicks on ADDTOCART button",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_clicks_on_addtocart_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "User clicks on Cart icon",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_clicks_on_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46000000,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "Verify prices shown up for products",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.verify_prices_shown_up_for_products()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "Browser is closed",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.browser_is_closed()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Testcase6"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2181000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Initialize browser",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.initialize_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3501000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigate to Greenkart Homepage",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_navigate_to_greenkart_homepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify user landed in Homepage",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.verify_user_landed_in_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-18T08:45:31.762Z",
+        "line": 76,
+        "name": "Verify if clear functionality working as expected in cart page",
+        "description": "",
+        "id": "greenkart-add-items-to-cart;verify-if-clear-functionality-working-as-expected-in-cart-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "User is in GreenKart Landing page",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_is_in_greenkart_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2625000000,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "User searched for  \"Cauliflower\" vegetable",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cauliflower",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_searched_for_something_vegetable(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97000000,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "User clicks on ADDTOCART button",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_clicks_on_addtocart_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 97000000,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "User clicks on Cart icon",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_clicks_on_cart_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 99000000,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "User clicks on remove item icon",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.user_clicks_on_remove_item_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67000000,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "Verify cart is empty",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.verify_cart_is_empty()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 150000000,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "Browser is closed",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionGreenkart.browser_is_closed()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Testcase7"
           }
         ]
       }
     ],
-    "name": "Search and place order for Vegetables",
+    "name": "Greenkart Add Items to Cart",
     "description": "",
-    "id": "search-and-place-order-for-vegetables",
+    "id": "greenkart-add-items-to-cart",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/search.feature",
+    "uri": "file:src/test/java/features/greenkart.feature",
     "tags": []
   }
 ]

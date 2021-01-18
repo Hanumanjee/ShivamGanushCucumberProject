@@ -1,44 +1,119 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="205.921">
-<testcase classname="Search and place order for Vegetables" name="Search for items and move to checkout page" time="41.156">
-<system-out><![CDATA[Given validate the browser..................................................passed
-When Browser is triggered...................................................passed
-Then check if browser is started............................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="72.432">
+<testcase classname="Greenkart Add Items to Cart" name="Add item to cart and verify if product is added to cart page" time="8.82">
+<system-out><![CDATA[Given Initialize browser....................................................passed
+When User navigate to Greenkart Homepage....................................passed
+Then Verify user landed in Homepage.........................................passed
 Given User is in GreenKart Landing page.....................................passed
-When User searched for  "Brinjal" vegetable.................................passed
-And Added items to cart.....................................................passed
-And User proceeds to Checkout page for purchase.............................passed
-Then Verify selected "Brinjal"items are displayed in Checkout page..........passed
+When User clicks on ADDTOCART button........................................passed
+And User clicks on Cart icon................................................passed
+Then Verify item is added to cart...........................................passed
+And Browser is closed.......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Search and place order for Vegetables" name="Search for items and validate results" time="108.905">
-<system-out><![CDATA[Given validate the browser..................................................passed
-When Browser is triggered...................................................passed
-Then check if browser is started............................................passed
+<testcase classname="Greenkart Add Items to Cart" name="Refresh the page and verify if items are still present in the cart" time="20.532">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;root&quot;]/div/header/div/div[3]/div[2]/div[1]/div[1]/ul/li/div[1]/p[1]&quot;}&#10;  (Session info: chrome=87.0.4280.141)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'HANUMANJEESHIVAMs-MacBook-Pro.local', ip: '2601:642:4180:8870:0:0:0:137%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/fn/fmpftrr97r7...}, goog:chromeOptions: {debuggerAddress: localhost:52629}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 498592c060061a230656f0bf227bba71&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;root&quot;]/div/header/div/div[3]/div[2]/div[1]/div[1]/ul/li/div[1]/p[1]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Initialize browser....................................................passed
+When User navigate to Greenkart Homepage....................................passed
+Then Verify user landed in Homepage.........................................passed
 Given User is in GreenKart Landing page.....................................passed
-When User searched for  Cucumber vegetables.................................passed
-Then Cucumber results is displayed..........................................passed
-And close the browser.......................................................passed
+When User clicks on ADDTOCART button........................................passed
+And User clicks on Cart icon................................................passed
+And User refresh the browser................................................passed
+Then Verify items are still present in cart.................................failed
+And Browser is closed.......................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/div/header/div/div[3]/div[2]/div[1]/div[1]/ul/li/div[1]/p[1]"}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HANUMANJEESHIVAMs-MacBook-Pro.local', ip: '2601:642:4180:8870:0:0:0:137%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/fn/fmpftrr97r7...}, goog:chromeOptions: {debuggerAddress: localhost:52629}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 498592c060061a230656f0bf227bba71
+*** Element info: {Using=xpath, value=//*[@id="root"]/div/header/div/div[3]/div[2]/div[1]/div[1]/ul/li/div[1]/p[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at stepDefinitions.stepDefinitionGreenkart.verify_items_are_still_present_in_cart(stepDefinitionGreenkart.java:73)
+	at ✽.Verify items are still present in cart(file:///Users/hanumanjeeshivam/ideaProjects/ShivamGanushCucumberProject/src/test/java/features/greenkart.feature:24)
+]]></failure>
+</testcase>
+<testcase classname="Greenkart Add Items to Cart" name="Increase the count of item and verify it it is showing up in cart" time="7.78">
+<system-out><![CDATA[Given Initialize browser....................................................passed
+When User navigate to Greenkart Homepage....................................passed
+Then Verify user landed in Homepage.........................................passed
+Given User is in GreenKart Landing page.....................................passed
+When User searched for  "Cucumber" vegetable................................passed
+And User clicks on plus button for 4 times..................................passed
+And User clicks on ADDTOCART button.........................................passed
+And User clicks on Cart icon................................................passed
+Then Verify items are still present in cart.................................passed
+And Verify correct numbers of items are in cart.............................passed
+And Browser is closed.......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Search and place order for Vegetables" name="Search for items and validate results 2" time="22.437">
-<system-out><![CDATA[Given validate the browser..................................................passed
-When Browser is triggered...................................................passed
-Then check if browser is started............................................passed
+<testcase classname="Greenkart Add Items to Cart" name="Verify text ADDED pops up when you add item to cart" time="5.729">
+<system-out><![CDATA[Given Initialize browser....................................................passed
+When User navigate to Greenkart Homepage....................................passed
+Then Verify user landed in Homepage.........................................passed
 Given User is in GreenKart Landing page.....................................passed
-When User searched for  Tomato vegetables...................................passed
-Then Tomato results is displayed............................................passed
-And close the browser.......................................................passed
+When User clicks on ADDTOCART button........................................passed
+Then Verify ADDED text is popped up.........................................passed
+And Browser is closed.......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Search and place order for Vegetables" name="Search for items and validate results 3" time="32.943">
-<system-out><![CDATA[Given validate the browser..................................................passed
-When Browser is triggered...................................................passed
-Then check if browser is started............................................passed
+<testcase classname="Greenkart Add Items to Cart" name="Verify sum of products matches with amount displayed in cart" time="7.792">
+<system-out><![CDATA[Given Initialize browser....................................................passed
+When User navigate to Greenkart Homepage....................................passed
+Then Verify user landed in Homepage.........................................passed
 Given User is in GreenKart Landing page.....................................passed
-When User searched for  Brinjal vegetables..................................passed
-Then Brinjal results is displayed...........................................passed
-And close the browser.......................................................passed
+When User searched for  "Cauliflower" vegetable.............................passed
+And User clicks on plus button for 4 times..................................passed
+And User clicks on ADDTOCART button.........................................passed
+And User clicks on Cart icon................................................passed
+Then Verify sum of produts matches with amount displayed in cart............passed
+And Browser is closed.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Greenkart Add Items to Cart" name="Verify the prices shown up for products in page" time="12.602">
+<system-out><![CDATA[Given Initialize browser....................................................passed
+When User navigate to Greenkart Homepage....................................passed
+Then Verify user landed in Homepage.........................................passed
+Given User is in GreenKart Landing page.....................................passed
+When User searched for  "Cauliflower" vegetable.............................passed
+And User clicks on ADDTOCART button.........................................passed
+And User searched for  "Tomato" vegetable...................................passed
+And User clicks on ADDTOCART button.........................................passed
+And User searched for  "Beans" vegetable....................................passed
+And User clicks on ADDTOCART button.........................................passed
+And User clicks on Cart icon................................................passed
+Then Verify prices shown up for products....................................passed
+And Browser is closed.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Greenkart Add Items to Cart" name="Verify if clear functionality working as expected in cart page" time="8.834">
+<system-out><![CDATA[Given Initialize browser....................................................passed
+When User navigate to Greenkart Homepage....................................passed
+Then Verify user landed in Homepage.........................................passed
+Given User is in GreenKart Landing page.....................................passed
+When User searched for  "Cauliflower" vegetable.............................passed
+And User clicks on ADDTOCART button.........................................passed
+And User clicks on Cart icon................................................passed
+And User clicks on remove item icon.........................................passed
+Then Verify cart is empty...................................................passed
+And Browser is closed.......................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

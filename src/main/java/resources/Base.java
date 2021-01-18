@@ -16,24 +16,26 @@ public class Base {
     public static WebDriver initializeDriver() {
         FileInputStream fis;
         try {
-            fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\resources\\global.properties");
+            fis = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/resources/global.properties");
             prop = new Properties();
             prop.load(fis);
 
             String browserName = prop.getProperty("browser"); //from properties file
             //String browserName= System.getProperty("browser"); //from Maven
+
+       //     /src/main/ja
             System.out.println(browserName);
 
             if (browserName.equals("chrome")) {
-                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\main\\java\\resources\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/java/resources/chromedriver");
                 driver = new ChromeDriver();
             } else if (browserName.equals("firefox")) {
-                System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\main\\java\\resources\\geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/src/main/java/resources/geckodriver");
                 driver = new FirefoxDriver();
             } else if (browserName.equals("chromeheadless")) {
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("headless");
-                System.setProperty("webdriver.crome.driver", System.getProperty("user.dir") + "\\src\\main\\java\\resources\\chromedriver.exe");
+                System.setProperty("webdriver.crome.driver", System.getProperty("user.dir") + "/src/main/java/resources/chromedriver");
                 driver = new ChromeDriver(options);
 
             } else if (browserName.equals("IE")) {
